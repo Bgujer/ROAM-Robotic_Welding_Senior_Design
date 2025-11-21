@@ -1,6 +1,6 @@
 # Robot Calibration
 
-- - - ;
+- - -
 
 ## Overview
 
