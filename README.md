@@ -6,19 +6,15 @@ This repository contains documentation, source code, CAD models, simulation data
 
 The goal of this project is to develop a functional robotic welding system integrating a **UFactory xArm 850** with welding hardware and sensing. The system will be capable of performing automated weld paths with repeatability, safety, and process parameter logging.
 
-
-
 ## Repository Structure
 * 📁 Roam-Robotic_Welding_SD
   * /cad/ → Final and working CAD assemblies & components
-  * /code/ → Controller scripts, ROS nodes, automation logic
+  * /code/ → Controller scripts, ROS nodes, other logic
   * /documentation/ → Meeting notes, test reports, safety docs
   * /analysis/ → Simulation results & weld-path planning
-  * README.md → You're reading it!
+  * README.md → Doc Explaining Structure
 
 > ⚠️ *Do not store proprietary vendor files or sensitive information in this repo.*
-
-
 
 ## Intellectual Property & Confidentiality
 
@@ -32,18 +28,14 @@ Some elements of the project may be confidential under NDA. Do not upload or dis
 ROAM Confidential Information (designs, data, research, or business details) without
 written permission from ROAM.
 
-
-
 ## Hardware Used
 
 | Component | Model | 
 
 | Robotic Arm | **UFactory xArm 850** |\
-| Welder | TBD (MIG) |\
+| Welder | **Miller MillerMatic Pro** |\
 | End Effector | Custom mount & torch adapter |\
 | Safety Hardware | Welding light curtains, emergency stops |
-
-
 
 ## Software Stack
 
