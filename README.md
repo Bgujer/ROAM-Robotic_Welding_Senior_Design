@@ -33,7 +33,7 @@ written permission from ROAM.
 
 ## Hardware Used
 
-| Component | Model | 
+| **Component** | **Model** | 
 
 | Robotic Arm | **UFactory xArm 850** |\
 | Welder | **Miller MillerMatic Pro** |\
@@ -42,9 +42,10 @@ written permission from ROAM.
 
 ## Software Stack
 
-| Category | Tool / Framework |\
+| **Category** | **Tool / Framework** |
+
 | IDE / Control | UFactory Studio, Python, ROS |\
-| Path Planning | tbd (Post-Processor)|
+| Path Planning | Point-to-point w/ python-guided paths (future development needed for post-processing)|\
 | Version Control | Git + GitHub Projects |
 
 ## Getting Started
@@ -55,7 +56,7 @@ written permission from ROAM.
 
 ## 👥 Contributors
 
-| Name | Role | Responsibilities |
+| **Name** | **Role** | **Responsibilities** |
 
 | Ben Gujer | Controls Focus | Welder Integration, Safety |\
 | Dexter Shafer-White | Controls Focus | xArm control scripts, path planning logic |\
