@@ -164,6 +164,22 @@ h4,
   font-size: 1.02rem;
 }
 
+.layout--single.roam-gallery-page .page {
+  float: none;
+  width: 100%;
+  padding-right: 0;
+}
+
+.layout--single.roam-gallery-page .page__inner-wrap {
+  max-width: none;
+}
+
+.layout--single.roam-gallery-page .page__content {
+  width: 100%;
+  margin-right: 0;
+  margin-left: 0;
+}
+
 .roam-section {
   margin: 2.75rem 0;
   padding: 1.2rem 0;
@@ -314,7 +330,7 @@ h4,
 .roam-gallery-grid {
   display: grid;
   gap: 1rem;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
 .roam-gallery-card {
@@ -329,7 +345,7 @@ h4,
 .roam-gallery-card video {
   width: 100%;
   display: block;
-  aspect-ratio: 16 / 10;
+  aspect-ratio: 4 / 3;
   object-fit: cover;
 }
 

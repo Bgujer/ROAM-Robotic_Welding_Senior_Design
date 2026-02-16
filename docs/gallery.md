@@ -2,6 +2,9 @@
 title: "ROAM Media Gallery"
 layout: single
 permalink: /gallery/
+classes:
+  - wide
+  - roam-gallery-page
 ---
 
 <section class="roam-section roam-section--gallery-intro">
