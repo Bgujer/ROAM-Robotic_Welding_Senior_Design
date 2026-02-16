@@ -1,0 +1,20 @@
+<footer>
+  {% include footer/custom.html %}
+
+  <div class="page__footer-follow">
+    <ul class="social-icons">
+      {% unless site.atom_feed.hide %}
+        <li>
+          <a href="{{ '/feed.xml' | relative_url }}">
+            <i class="fas fa-fw fa-rss-square" aria-hidden="true"></i> {{ site.data.ui-text[site.locale].feed_label | default: "Feed" }}
+          </a>
+        </li>
+      {% endunless %}
+    </ul>
+  </div>
+
+  <div class="page__footer-copyright">
+    &copy; {{ site.time | date: '%Y' }}
+    <a href="https://www.roam-electric.com/" rel="nofollow">ROAM Electric</a>.
+  </div>
+</footer>
