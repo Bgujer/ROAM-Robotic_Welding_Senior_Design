@@ -9,35 +9,35 @@ permalink: /gallery/
   <p>
     This page highlights the ROAM robotic welding system as it moves from integration to full-cell operation.
   </p>
-  <p><a class="btn btn--primary btn--large" href="/">Roam Senior Design Home</a></p>
+  <p><a class="btn btn--primary btn--large" href="{{ '/' | relative_url }}">Roam Senior Design Home</a></p>
 </section>
 
 <section class="roam-section">
   <div class="roam-gallery-grid">
     <figure class="roam-gallery-card">
       <button class="roam-gallery-zoom" type="button" aria-label="Open image: Initial Proof-of-Concept CAD Validation<">
-        <img src="/Documentation/Images/CellAssemRev1.png" alt="Initial Proof-of-Concept CAD Validation<" loading="lazy">
+        <img src="{{ '/Documentation/Images/CellAssemRev1.png' | relative_url }}" alt="Initial Proof-of-Concept CAD Validation<" loading="lazy">
       </button>
       <figcaption>Initial Proof-of-Concept CAD Validation</figcaption>
     </figure>
 
     <figure class="roam-gallery-card">
       <button class="roam-gallery-zoom" type="button" aria-label="Open image: First coupons to tool-in TCP speed and welder settings">
-        <img src="/assets/images/gallery/IMG_5625.jpg" alt="First coupons to tool-in TCP speed and welder settings" loading="lazy">
+        <img src="{{ '/assets/images/gallery/IMG_5625.jpg' | relative_url }}" alt="First coupons to tool-in TCP speed and welder settings" loading="lazy">
       </button>
       <figcaption>First Coupons to Tool-in TCP Speed and Welder Settings</figcaption>
     </figure>
 
     <figure class="roam-gallery-card">
       <button class="roam-gallery-zoom" type="button" aria-label="Open image: First Successful Coupon Test">
-        <img src="/assets/images/gallery/IMG_5621.JPG" alt="First Successful Coupon Test" loading="lazy">
+        <img src="{{ '/assets/images/gallery/IMG_5621.JPG' | relative_url }}" alt="First Successful Coupon Test" loading="lazy">
       </button>
       <figcaption>First Successful Coupon Test</figcaption>
     </figure>
 
     <figure class="roam-gallery-card">
       <button class="roam-gallery-zoom" type="button" aria-label="Open image: Original Torch Neck Integration Attempt">
-        <img src="/assets/images/gallery/oldNeck.png" alt="Original Torch Neck Integration Attempt" loading="lazy">
+        <img src="{{ '/assets/images/gallery/oldNeck.png' | relative_url }}" alt="Original Torch Neck Integration Attempt" loading="lazy">
       </button>
       <figcaption>Original Torch Neck Integration Attempt</figcaption>
     </figure>
