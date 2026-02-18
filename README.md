@@ -6,9 +6,6 @@ This repository contains the public-facing website and non-confidential material
 
 The goal of this project is to develop a functional robotic welding system integrating a **UFactory xArm 850** with welding hardware and sensing. The system will be capable of performing automated weld paths with repeatability, safety, and process parameter logging.
 
-![Weld Cell Assembly V1](./Documentation/Images/CellAssemRev1.png) \
-(First Iteration of Welding Assembly)
-
 ## Repository Structure
 * 📁 ROAM-Robotic_Welding_Senior_Design
   * /docs/ → GitHub Pages source (Jekyll + Minimal Mistakes)
@@ -33,8 +30,8 @@ written permission from ROAM.
 
 This public repository contains website content and non-confidential project materials.
 
-- Public repository: https://github.com/Bgujer/ROAM-Robotic_Welding_Senior_Design
-- Private companion repository (authorized collaborators only): https://github.com/Bgujer/Roam-Robotic_Welding_SD
+- **Public repository**: https://github.com/Bgujer/ROAM-Robotic_Welding_Senior_Design
+- **Private companion repository (authorized collaborators only)**: https://github.com/Bgujer/Roam-Robotic_Welding_SD
 
 Confidential project files (including development CAD, code, analysis, and internal documentation) are maintained in the private repository.
 
@@ -55,11 +52,6 @@ Confidential project files (including development CAD, code, analysis, and inter
 | Path Planning | Point-to-point w/ python-guided paths (future development needed for post-processing)|\
 | Version Control | Git + GitHub Projects |
 
-## Getting Started
-
-### Clone the repo
-
-```git clone https://github.com/bgujer/Roam-Robotic_Welding_SD.git cd Roam-Robotic_Welding_SD ```
 
 ## 👥 Contributors
 
