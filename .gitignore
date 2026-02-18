@@ -1,0 +1,18 @@
+# Public repo guardrails
+Analysis/
+CAD/
+Code/
+Documentation/
+AGENTS.md
+
+# Jekyll build output and local artifacts
+docs/_site/
+docs/.sass-cache/
+docs/.jekyll-cache/
+docs/.jekyll-metadata
+docs/Gemfile.lock
+
+# Common local/editor noise
+.DS_Store
+Thumbs.db
+*.tmp

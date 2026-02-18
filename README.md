@@ -2,7 +2,7 @@
 
 ## Overview
 
-This repository contains documentation, source code, CAD models, simulation data, and test results for the **ROAM / Rapid Prototyping Lab (RPL) — Robotic Welding Senior Design Project (Fall 2025 – Spring 2026)** at **Colorado State University**.
+This repository contains the public-facing website and non-confidential materials for the **ROAM / Rapid Prototyping Lab (RPL) — Robotic Welding Senior Design Project (Fall 2025 – Spring 2026)** at **Colorado State University**.
 
 The goal of this project is to develop a functional robotic welding system integrating a **UFactory xArm 850** with welding hardware and sensing. The system will be capable of performing automated weld paths with repeatability, safety, and process parameter logging.
 
@@ -10,12 +10,10 @@ The goal of this project is to develop a functional robotic welding system integ
 (First Iteration of Welding Assembly)
 
 ## Repository Structure
-* 📁 Roam-Robotic_Welding_SD
-  * /cad/ → Final and working CAD assemblies & components
-  * /code/ → Controller scripts, ROS nodes, other logic
-  * /documentation/ → Meeting notes, test reports, safety docs
-  * /analysis/ → Simulation results & weld-path planning
-  * README.md → Doc Explaining Structure
+* 📁 ROAM-Robotic_Welding_Senior_Design
+  * /docs/ → GitHub Pages source (Jekyll + Minimal Mistakes)
+  * README.md → Project overview and repository policy
+  * LICENSE → License file
 
 > ⚠️ *Do not store proprietary vendor files or sensitive information in this repo.*
 
@@ -37,6 +35,8 @@ This public repository contains website content and non-confidential project mat
 
 - Public repository: https://github.com/Bgujer/ROAM-Robotic_Welding_Senior_Design
 - Private companion repository (authorized collaborators only): https://github.com/Bgujer/Roam-Robotic_Welding_SD
+
+Confidential project files (including development CAD, code, analysis, and internal documentation) are maintained in the private repository.
 
 ## Hardware Used
 
