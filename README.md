@@ -31,6 +31,13 @@ Some elements of the project may be confidential under NDA. Do not upload or dis
 ROAM Confidential Information (designs, data, research, or business details) without
 written permission from ROAM.
 
+## Public and Private Repositories
+
+This public repository contains website content and non-confidential project materials.
+
+- Public repository: https://github.com/Bgujer/ROAM-Robotic_Welding_Senior_Design
+- Private companion repository (authorized collaborators only): https://github.com/Bgujer/Roam-Robotic_Welding_SD
+
 ## Hardware Used
 
 | **Component** | **Model** | 
