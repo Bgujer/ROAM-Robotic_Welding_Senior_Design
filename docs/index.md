@@ -67,41 +67,41 @@ excerpt: "A CSU senior design robotic welding platform focused on safe, repeatab
 <section class="roam-section">
   <p class="roam-kicker">Meet the Team</p>
   <img class="roam-team-banner" src="{{ '/assets/images/DSC_1994%20(1).JPG' | relative_url }}" alt="ROAM senior design team photo" loading="lazy">
-  <p class="roam-team-hint"><em>*Hover on desktop, tap a card on mobile for details*</em></p>
+  <p class="roam-team-hint"><em>*Hover (or tap a card on mobile) for more details*</em></p>
   <div class="roam-grid roam-grid--team">
     <article class="roam-card roam-card--person" tabindex="0">
       <h3>Ben Gujer</h3>
       <p class="role">Controls Focus</p>
       <div class="roam-person-hover">
-        <p>Welder integration, safety</p>
+        <p>Welder integration and safety</p>
       </div>
     </article>
     <article class="roam-card roam-card--person" tabindex="0">
       <h3>Dexter Shafer-White</h3>
       <p class="role">Controls Focus</p>
       <div class="roam-person-hover">
-        <p>xArm control scripts, path planning logic</p>
+        <p>xArm control scripts and path planning logic</p>
       </div>
     </article>
     <article class="roam-card roam-card--person" tabindex="0">
       <h3>Gage Steinke</h3>
       <p class="role">Mechanical Focus</p>
       <div class="roam-person-hover">
-        <p>Welder interface, torch mounting system</p>
+        <p>Welder interface and torch mounting system</p>
       </div>
     </article>
     <article class="roam-card roam-card--person" tabindex="0">
       <h3>Greg Hider</h3>
       <p class="role">Mechanical Focus</p>
       <div class="roam-person-hover">
-        <p>Welder interface, supporting mounting systems</p>
+        <p>Welder interface and supporting mounting systems</p>
       </div>
     </article>
     <article class="roam-card roam-card--person" tabindex="0">
       <h3>Tamsin Izard</h3>
       <p class="role">Project Manager</p>
       <div class="roam-person-hover">
-        <p>Timeline, documentation, meeting coordination</p>
+        <p>Timeline, documentation, and meeting coordination</p>
       </div>
     </article>
   </div>
