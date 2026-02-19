@@ -67,11 +67,15 @@ excerpt: "A CSU senior design robotic welding platform focused on safe, repeatab
 <section class="roam-section">
   <p class="roam-kicker">Meet the Team</p>
   <img class="roam-team-banner" src="{{ '/assets/images/DSC_1994%20(1).JPG' | relative_url }}" alt="ROAM senior design team photo" loading="lazy">
-  <p class="roam-team-hint"><em>*Hover (or tap a card on mobile) for more details*</em></p>
+  <p class="roam-team-hint"><em>*Hover on desktop, tap Details on mobile*</em></p>
   <div class="roam-grid roam-grid--team">
     <article class="roam-card roam-card--person" tabindex="0">
       <h3>Ben Gujer</h3>
       <p class="role">Controls Focus</p>
+      <button class="roam-person-toggle" type="button" aria-expanded="false">
+        <span>Details</span>
+        <span class="roam-chevron" aria-hidden="true">></span>
+      </button>
       <div class="roam-person-hover">
         <p>Welder integration and safety</p>
       </div>
@@ -79,6 +83,10 @@ excerpt: "A CSU senior design robotic welding platform focused on safe, repeatab
     <article class="roam-card roam-card--person" tabindex="0">
       <h3>Dexter Shafer-White</h3>
       <p class="role">Controls Focus</p>
+      <button class="roam-person-toggle" type="button" aria-expanded="false">
+        <span>Details</span>
+        <span class="roam-chevron" aria-hidden="true">></span>
+      </button>
       <div class="roam-person-hover">
         <p>xArm control scripts and path planning logic</p>
       </div>
@@ -86,6 +94,10 @@ excerpt: "A CSU senior design robotic welding platform focused on safe, repeatab
     <article class="roam-card roam-card--person" tabindex="0">
       <h3>Gage Steinke</h3>
       <p class="role">Mechanical Focus</p>
+      <button class="roam-person-toggle" type="button" aria-expanded="false">
+        <span>Details</span>
+        <span class="roam-chevron" aria-hidden="true">></span>
+      </button>
       <div class="roam-person-hover">
         <p>Welder interface and torch mounting system</p>
       </div>
@@ -93,6 +105,10 @@ excerpt: "A CSU senior design robotic welding platform focused on safe, repeatab
     <article class="roam-card roam-card--person" tabindex="0">
       <h3>Greg Hider</h3>
       <p class="role">Mechanical Focus</p>
+      <button class="roam-person-toggle" type="button" aria-expanded="false">
+        <span>Details</span>
+        <span class="roam-chevron" aria-hidden="true">></span>
+      </button>
       <div class="roam-person-hover">
         <p>Welder interface and supporting mounting systems</p>
       </div>
@@ -100,6 +116,10 @@ excerpt: "A CSU senior design robotic welding platform focused on safe, repeatab
     <article class="roam-card roam-card--person" tabindex="0">
       <h3>Tamsin Izard</h3>
       <p class="role">Project Manager</p>
+      <button class="roam-person-toggle" type="button" aria-expanded="false">
+        <span>Details</span>
+        <span class="roam-chevron" aria-hidden="true">></span>
+      </button>
       <div class="roam-person-hover">
         <p>Timeline, documentation, and meeting coordination</p>
       </div>
@@ -128,28 +148,32 @@ excerpt: "A CSU senior design robotic welding platform focused on safe, repeatab
     function closeAll(exceptCard) {
       cards.forEach(function (card) {
         if (card !== exceptCard) {
+          var toggle = card.querySelector('.roam-person-toggle');
           card.classList.remove('is-open');
           card.setAttribute('aria-expanded', 'false');
+          if (toggle) {
+            toggle.setAttribute('aria-expanded', 'false');
+          }
         }
       });
     }
 
     cards.forEach(function (card) {
-      card.setAttribute('role', 'button');
       card.setAttribute('aria-expanded', 'false');
+      var toggle = card.querySelector('.roam-person-toggle');
 
-      card.addEventListener('click', function () {
+      if (!toggle) {
+        return;
+      }
+
+      toggle.setAttribute('aria-expanded', 'false');
+
+      toggle.addEventListener('click', function () {
         var willOpen = !card.classList.contains('is-open');
         closeAll(card);
         card.classList.toggle('is-open', willOpen);
         card.setAttribute('aria-expanded', willOpen ? 'true' : 'false');
-      });
-
-      card.addEventListener('keydown', function (event) {
-        if (event.key === 'Enter' || event.key === ' ') {
-          event.preventDefault();
-          card.click();
-        }
+        toggle.setAttribute('aria-expanded', willOpen ? 'true' : 'false');
       });
     });
 
