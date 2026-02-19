@@ -67,7 +67,7 @@ excerpt: "A CSU senior design robotic welding platform focused on safe, repeatab
 <section class="roam-section">
   <p class="roam-kicker">Meet the Team</p>
   <img class="roam-team-banner" src="{{ '/assets/images/DSC_1994%20(1).JPG' | relative_url }}" alt="ROAM senior design team photo" loading="lazy">
-  <p class="roam-team-hint"><em>*Hover or tap for more details*</em></p>
+  <p class="roam-team-hint"><em>*Hover on desktop, tap a card on mobile for details*</em></p>
   <div class="roam-grid roam-grid--team">
     <article class="roam-card roam-card--person" tabindex="0">
       <h3>Ben Gujer</h3>
@@ -110,3 +110,54 @@ excerpt: "A CSU senior design robotic welding platform focused on safe, repeatab
 <section class="roam-section roam-section--note">
   <p><strong>Confidentiality note:</strong> Some project elements may be confidential under NDA. Do not upload or disclose ROAM confidential information without written permission.</p>
 </section>
+
+<script>
+  (function () {
+    var isTouchLike = window.matchMedia("(hover: none), (pointer: coarse)").matches;
+
+    if (!isTouchLike) {
+      return;
+    }
+
+    var cards = Array.prototype.slice.call(document.querySelectorAll('.roam-card--person'));
+
+    if (!cards.length) {
+      return;
+    }
+
+    function closeAll(exceptCard) {
+      cards.forEach(function (card) {
+        if (card !== exceptCard) {
+          card.classList.remove('is-open');
+          card.setAttribute('aria-expanded', 'false');
+        }
+      });
+    }
+
+    cards.forEach(function (card) {
+      card.setAttribute('role', 'button');
+      card.setAttribute('aria-expanded', 'false');
+
+      card.addEventListener('click', function () {
+        var willOpen = !card.classList.contains('is-open');
+        closeAll(card);
+        card.classList.toggle('is-open', willOpen);
+        card.setAttribute('aria-expanded', willOpen ? 'true' : 'false');
+      });
+
+      card.addEventListener('keydown', function (event) {
+        if (event.key === 'Enter' || event.key === ' ') {
+          event.preventDefault();
+          card.click();
+        }
+      });
+    });
+
+    document.addEventListener('click', function (event) {
+      var clickedCard = event.target.closest('.roam-card--person');
+      if (!clickedCard) {
+        closeAll();
+      }
+    });
+  })();
+</script>
