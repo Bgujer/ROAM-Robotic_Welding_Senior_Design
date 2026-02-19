@@ -67,7 +67,7 @@ excerpt: "A CSU senior design robotic welding platform focused on safe, repeatab
 <section class="roam-section">
   <p class="roam-kicker">Meet the Team</p>
   <img class="roam-team-banner" src="{{ '/assets/images/DSC_1994%20(1).JPG' | relative_url }}" alt="ROAM senior design team photo" loading="lazy">
-  <p class="roam-team-hint"><em>*Hover for more details*</em></p>
+  <p class="roam-team-hint"><em>*Hover or tap for more details*</em></p>
   <div class="roam-grid roam-grid--team">
     <article class="roam-card roam-card--person" tabindex="0">
       <h3>Ben Gujer</h3>

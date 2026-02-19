@@ -493,6 +493,11 @@ h4,
 }
 
 @media (hover: none) {
+  .roam-team-hint {
+    margin-top: 0.35rem;
+    margin-bottom: 0.85rem;
+  }
+
   .roam-card--person {
     min-height: auto;
     cursor: default;
@@ -504,6 +509,15 @@ h4,
     transform: none;
     pointer-events: auto;
     margin-top: 0.65rem;
-    border-radius: 10px;
+    border-radius: 8px;
+    display: block;
+    padding: 0.75rem 0.8rem;
+    background: #f4e4d8;
+    color: #5b2f15;
+    border: 1px solid #ebd6c6;
+  }
+
+  .roam-person-hover p {
+    font-size: 0.9rem;
   }
 }
