@@ -33,7 +33,7 @@ This public repository contains website content and non-confidential project mat
 - **Public repository**: https://github.com/Bgujer/ROAM-Robotic_Welding_Senior_Design
 - **Private companion repository (authorized collaborators only)**: https://github.com/Bgujer/Roam-Robotic_Welding_SD
 
-Confidential project files (including development CAD, code, analysis, and internal documentation) are maintained in the private repository.
+Confidential project files (including development CAD, code, analysis, and internal documentation) are maintained in the private repository. **Access is by request only and confirmation of NDA.**
 
 ## Hardware Used
 
