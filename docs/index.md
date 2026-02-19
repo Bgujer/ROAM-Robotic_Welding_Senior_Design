@@ -10,7 +10,7 @@ header:
   caption: "ROAM robotic welding cell - first running iteration"
   actions:
     - label: "Explore Repository"
-      url: "https://github.com/bgujer/Roam-Robotic_Welding_SD"
+      url: "https://github.com/Bgujer/ROAM-Robotic_Welding_Senior_Design"
       class: "btn btn--primary"
     - label: "View Media Gallery"
       url: "/gallery/"

@@ -8,8 +8,8 @@ title: "ROAM Robotic Welding"
 name: "ROAM Robotic Welding"
 description: "CSU Senior Design robotic welding project focused on low-cost automation."
 url: "https://bgujer.github.io"
-baseurl: "/Roam-Robotic_Welding_SD"
-repository: "bgujer/Roam-Robotic_Welding_SD"
+baseurl: "/ROAM-Robotic_Welding_Senior_Design"
+repository: "bgujer/ROAM-Robotic_Welding_Senior_Design"
 
 # Ensure docs under Documentation are processed
 include:
