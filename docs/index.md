@@ -19,12 +19,12 @@ excerpt: "A CSU senior design robotic welding platform focused on safe, repeatab
 
 <section class="roam-section roam-section--objective">
   <p class="roam-kicker">Main Objective</p>
-  <h2>Build a dependable robotic welding system for real lab use</h2>
+  <h2>Build a dependable and inexpensive robotic welding system for real-world use</h2>
   <p>
-    The ROAM / Rapid Prototyping Lab (RPL) Robotic Welding Senior Design Project's (Fall 2025 - Spring 2026)
-    spcope involved integrating a <strong>UFactory xArm 850</strong> with manual welding hardware.
-    Our objective is to design a safe and repeatable weld execution while holding a
-    project cost objective near <strong>$20,000</strong> to allow for an acessable price-point for our project's end user, ROAM Electric.
+    The ROAM / Rapid Prototyping Lab (RPL) Robotic Welding Senior Design Project (Fall 2025-Spring 2026)
+    focused on integrating a <strong>UFactory xArm 850</strong> with manual welding hardware to build a welding package that supports manufacturing at ROAM Electric, an electric motorcycle company in Kenya.
+    Our objective is to deliver safe, repeatable weld execution while holding project costs
+    near <strong>$20,000</strong> to allow for an accessible price point for our end user, ROAM Electric.
   </p>
 </section>
 
@@ -36,14 +36,14 @@ excerpt: "A CSU senior design robotic welding platform focused on safe, repeatab
       <ul>
         <li><strong>Robot:</strong> UFactory xArm 850</li>
         <li><strong>Welder:</strong> Miller MillerMatic Pro</li>
-        <li><strong>End Effector:</strong> Custom torch mount and adapter</li>
+        <li><strong>End Effector:</strong> Custom torch mount and electric isolation</li>
       </ul>
     </article>
     <article class="roam-card">
       <h3>Controls and Safety</h3>
       <ul>
         <li><strong>Control Stack:</strong> UFactory Studio, Python, ROS</li>
-        <li><strong>Safety:</strong> Emergency Stop and Built-in Collision Detection via Torque Feedback </li>
+        <li><strong>Safety:</strong> Emergency Stop and built-in collision detection via torque feedback</li>
       </ul>
     </article>
   </div>
@@ -53,12 +53,12 @@ excerpt: "A CSU senior design robotic welding platform focused on safe, repeatab
   <p class="roam-kicker">Progress Highlights</p>
   <div class="roam-grid roam-grid--two">
     <article class="roam-card">
-      <h3>Initiating Welds from Controler</h3>
+      <h3>Initiating Welds from Controller</h3>
       <p>Tied into the manual welder trigger and retrofitted it to actuate off of a signal sent from our controller.</p>
     </article>
     <article class="roam-card">
       <h3>Full Cell Design</h3>
-      <p>Designed a cell to be an all-in-one system, allowing for easy moves across factory floors - simulating an end product similar to $100k+ turn-key systems.</p>
+      <p>Designed a cell to be an all-in-one system, allowing easy movement across factory floors, similar to $100k+ turnkey systems.</p>
     </article>
   </div>
 </section>
