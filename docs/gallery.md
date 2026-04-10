@@ -44,6 +44,41 @@ classes:
       </button>
       <figcaption>Original Torch Neck Integration Attempt</figcaption>
     </figure>
+
+    <figure class="roam-gallery-card">
+      <button class="roam-gallery-zoom" type="button" aria-label="Open image: Integration Snapshot DSC 7457">
+        <img src="{{ '/assets/images/gallery/DSC_7457.JPG' | relative_url }}" alt="Integration Snapshot DSC 7457" loading="lazy">
+      </button>
+      <figcaption>Integration Snapshot</figcaption>
+    </figure>
+
+    <figure class="roam-gallery-card">
+      <button class="roam-gallery-zoom" type="button" aria-label="Open image: Integration Snapshot DSC 7477">
+        <img src="{{ '/assets/images/gallery/DSC_7477.JPG' | relative_url }}" alt="Integration Snapshot DSC 7477" loading="lazy">
+      </button>
+      <figcaption>Integration Snapshot</figcaption>
+    </figure>
+
+    <figure class="roam-gallery-card">
+      <button class="roam-gallery-zoom" type="button" aria-label="Open image: Integration Snapshot DSC 7514">
+        <img src="{{ '/assets/images/gallery/DSC_7514.JPG' | relative_url }}" alt="Integration Snapshot DSC 7514" loading="lazy">
+      </button>
+      <figcaption>Integration Snapshot</figcaption>
+    </figure>
+
+    <figure class="roam-gallery-card">
+      <button class="roam-gallery-zoom" type="button" aria-label="Open image: Integration Snapshot DSC 7540">
+        <img src="{{ '/assets/images/gallery/DSC_7540.JPG' | relative_url }}" alt="Integration Snapshot DSC 7540" loading="lazy">
+      </button>
+      <figcaption>Integration Snapshot</figcaption>
+    </figure>
+
+    <figure class="roam-gallery-card">
+      <button class="roam-gallery-zoom" type="button" aria-label="Open image: Integration Snapshot DSC 7664">
+        <img src="{{ '/assets/images/gallery/DSC_7664.JPG' | relative_url }}" alt="Integration Snapshot DSC 7664" loading="lazy">
+      </button>
+      <figcaption>Integration Snapshot</figcaption>
+    </figure>
   </div>
 </section>
 
