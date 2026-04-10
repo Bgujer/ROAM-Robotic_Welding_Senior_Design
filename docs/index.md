@@ -6,6 +6,7 @@ header:
   overlay_color: "#808080"
   overlay_filter: "0.5"
   overlay_video: "/assets/videos/HeaderVideo.mp4"
+  overlay_video_poster: "/assets/images/Video-Thumbnail.png"
   caption: "ROAM robotic welding cell - first running iteration"
   actions:
     - label: "Explore Repository"

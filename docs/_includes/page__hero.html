@@ -1,5 +1,6 @@
 {% capture overlay_img_path %}{{ page.header.overlay_image | relative_url }}{% endcapture %}
 {% capture overlay_video_path %}{{ page.header.overlay_video | relative_url }}{% endcapture %}
+{% capture overlay_video_poster_path %}{% if page.header.overlay_video_poster %}{{ page.header.overlay_video_poster | relative_url }}{% elsif page.header.overlay_image %}{{ page.header.overlay_image | relative_url }}{% endif %}{% endcapture %}
 
 {% if page.header.overlay_filter contains "gradient" %}
   {% capture overlay_filter %}{{ page.header.overlay_filter }}{% endcapture %}
@@ -23,7 +24,7 @@
   style="{% if page.header.overlay_color %}background-color: {{ page.header.overlay_color | default: 'transparent' }};{% endif %} {% if page.header.overlay_image %}background-image: {% if overlay_filter %}{{ overlay_filter }}, {% endif %}url('{{ overlay_img_path }}');{% endif %}"
 >
   {% if page.header.overlay_video %}
-    <video class="page__hero-video" autoplay muted loop playsinline preload="metadata" aria-hidden="true"{% if page.header.overlay_image %} poster="{{ overlay_img_path }}"{% endif %}>
+    <video class="page__hero-video" autoplay muted loop playsinline preload="metadata" aria-hidden="true"{% if overlay_video_poster_path != blank %} poster="{{ overlay_video_poster_path }}"{% endif %}>
       <source src="{{ overlay_video_path }}" type="video/mp4">
     </video>
     {% if overlay_filter %}

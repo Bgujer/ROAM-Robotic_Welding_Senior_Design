@@ -18,64 +18,64 @@ classes:
 <section class="roam-section">
   <div class="roam-gallery-grid">
     <figure class="roam-gallery-card">
-      <button class="roam-gallery-zoom" type="button" aria-label="Open image: Initial Proof-of-Concept CAD Validation<">
-        <img src="{{ '/Documentation/Images/CellAssemRev1.png' | relative_url }}" alt="Initial Proof-of-Concept CAD Validation<" loading="lazy">
+      <button class="roam-gallery-zoom" type="button" aria-label="Open image: Initial Proof-of-Concept CAD Validation">
+        <img src="{{ '/Documentation/Images/CellAssemRev1.png' | relative_url }}" alt="Initial Proof-of-Concept CAD Validation" loading="lazy" decoding="async" fetchpriority="low">
       </button>
       <figcaption>Initial Proof-of-Concept CAD Validation</figcaption>
     </figure>
 
     <figure class="roam-gallery-card">
       <button class="roam-gallery-zoom" type="button" aria-label="Open image: First coupons to tool-in TCP speed and welder settings">
-        <img src="{{ '/assets/images/gallery/IMG_5625.jpg' | relative_url }}" alt="First coupons to tool-in TCP speed and welder settings" loading="lazy">
+        <img src="{{ '/assets/images/gallery/thumb/IMG_5625-thumb.jpg' | relative_url }}" data-full-src="{{ '/assets/images/gallery/IMG_5625.jpg' | relative_url }}" alt="First coupons to tool-in TCP speed and welder settings" loading="lazy" decoding="async" fetchpriority="low">
       </button>
       <figcaption>First Coupons to Tool-in TCP Speed and Welder Settings</figcaption>
     </figure>
 
     <figure class="roam-gallery-card">
       <button class="roam-gallery-zoom" type="button" aria-label="Open image: First Successful Coupon Test">
-        <img src="{{ '/assets/images/gallery/IMG_5621.JPG' | relative_url }}" alt="First Successful Coupon Test" loading="lazy">
+        <img src="{{ '/assets/images/gallery/thumb/IMG_5621-thumb.jpg' | relative_url }}" data-full-src="{{ '/assets/images/gallery/IMG_5621.JPG' | relative_url }}" alt="First Successful Coupon Test" loading="lazy" decoding="async" fetchpriority="low">
       </button>
       <figcaption>First Successful Coupon Test</figcaption>
     </figure>
 
     <figure class="roam-gallery-card">
       <button class="roam-gallery-zoom" type="button" aria-label="Open image: Original Torch Neck Integration Attempt">
-        <img src="{{ '/assets/images/gallery/oldNeck.png' | relative_url }}" alt="Original Torch Neck Integration Attempt" loading="lazy">
+        <img src="{{ '/assets/images/gallery/thumb/oldNeck-thumb.jpg' | relative_url }}" data-full-src="{{ '/assets/images/gallery/oldNeck.png' | relative_url }}" alt="Original Torch Neck Integration Attempt" loading="lazy" decoding="async" fetchpriority="low">
       </button>
       <figcaption>Original Torch Neck Integration Attempt</figcaption>
     </figure>
 
     <figure class="roam-gallery-card">
       <button class="roam-gallery-zoom" type="button" aria-label="Open image: Integration Snapshot DSC 7457">
-        <img src="{{ '/assets/images/gallery/DSC_7457.JPG' | relative_url }}" alt="Integration Snapshot DSC 7457" loading="lazy">
+        <img src="{{ '/assets/images/gallery/thumb/DSC_7457-thumb.jpg' | relative_url }}" data-full-src="{{ '/assets/images/gallery/DSC_7457.JPG' | relative_url }}" alt="Integration Snapshot DSC 7457" loading="lazy" decoding="async" fetchpriority="low">
       </button>
       <figcaption>Integration Snapshot</figcaption>
     </figure>
 
     <figure class="roam-gallery-card">
       <button class="roam-gallery-zoom" type="button" aria-label="Open image: Integration Snapshot DSC 7477">
-        <img src="{{ '/assets/images/gallery/DSC_7477.JPG' | relative_url }}" alt="Integration Snapshot DSC 7477" loading="lazy">
+        <img src="{{ '/assets/images/gallery/thumb/DSC_7477-thumb.jpg' | relative_url }}" data-full-src="{{ '/assets/images/gallery/DSC_7477.JPG' | relative_url }}" alt="Integration Snapshot DSC 7477" loading="lazy" decoding="async" fetchpriority="low">
       </button>
       <figcaption>Integration Snapshot</figcaption>
     </figure>
 
     <figure class="roam-gallery-card">
       <button class="roam-gallery-zoom" type="button" aria-label="Open image: Integration Snapshot DSC 7514">
-        <img src="{{ '/assets/images/gallery/DSC_7514.JPG' | relative_url }}" alt="Integration Snapshot DSC 7514" loading="lazy">
+        <img src="{{ '/assets/images/gallery/thumb/DSC_7514-thumb.jpg' | relative_url }}" data-full-src="{{ '/assets/images/gallery/DSC_7514.JPG' | relative_url }}" alt="Integration Snapshot DSC 7514" loading="lazy" decoding="async" fetchpriority="low">
       </button>
       <figcaption>Integration Snapshot</figcaption>
     </figure>
 
     <figure class="roam-gallery-card">
       <button class="roam-gallery-zoom" type="button" aria-label="Open image: Integration Snapshot DSC 7540">
-        <img src="{{ '/assets/images/gallery/DSC_7540.JPG' | relative_url }}" alt="Integration Snapshot DSC 7540" loading="lazy">
+        <img src="{{ '/assets/images/gallery/thumb/DSC_7540-thumb.jpg' | relative_url }}" data-full-src="{{ '/assets/images/gallery/DSC_7540.JPG' | relative_url }}" alt="Integration Snapshot DSC 7540" loading="lazy" decoding="async" fetchpriority="low">
       </button>
       <figcaption>Integration Snapshot</figcaption>
     </figure>
 
     <figure class="roam-gallery-card">
       <button class="roam-gallery-zoom" type="button" aria-label="Open image: Integration Snapshot DSC 7664">
-        <img src="{{ '/assets/images/gallery/DSC_7664.JPG' | relative_url }}" alt="Integration Snapshot DSC 7664" loading="lazy">
+        <img src="{{ '/assets/images/gallery/thumb/DSC_7664-thumb.jpg' | relative_url }}" data-full-src="{{ '/assets/images/gallery/DSC_7664.JPG' | relative_url }}" alt="Integration Snapshot DSC 7664" loading="lazy" decoding="async" fetchpriority="low">
       </button>
       <figcaption>Integration Snapshot</figcaption>
     </figure>
@@ -102,7 +102,8 @@ classes:
     var triggers = document.querySelectorAll(".roam-gallery-zoom");
 
     function openLightbox(image, caption) {
-      lightboxImage.src = image.currentSrc || image.src;
+      var fullSrc = image.getAttribute("data-full-src");
+      lightboxImage.src = fullSrc || image.currentSrc || image.src;
       lightboxImage.alt = image.alt || "Expanded gallery image";
       lightboxCaption.innerHTML = caption || "";
       lightbox.hidden = false;
