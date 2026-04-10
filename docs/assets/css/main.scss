@@ -160,6 +160,48 @@ h4,
   font-size: 1.05rem;
 }
 
+@media (max-width: 768px) {
+  .page__hero--video {
+    min-height: clamp(16rem, 58vw, 22rem);
+  }
+
+  .page__hero--overlay .wrapper {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0.65rem;
+    margin: 0;
+    padding: 0 0.6rem;
+    z-index: 3;
+    text-align: center;
+  }
+
+  .page__hero--overlay .page__title,
+  .page__hero--overlay .page__lead,
+  .page__hero--overlay .page__meta {
+    display: none;
+  }
+
+  .page__hero--overlay .wrapper p {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 0.45rem;
+    flex-wrap: wrap;
+  }
+
+  .page__hero--overlay .wrapper .btn {
+    padding: 0.46rem 0.72rem;
+    font-size: 0.78rem;
+    border-radius: 999px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.26);
+  }
+
+  .page__hero--overlay .page__hero-caption {
+    display: none;
+  }
+}
+
 .page__content {
   font-size: 1.02rem;
 }
