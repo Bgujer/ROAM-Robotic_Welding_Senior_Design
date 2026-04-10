@@ -161,29 +161,51 @@ h4,
 }
 
 @media (max-width: 768px) {
+  body {
+    overflow-x: hidden;
+  }
+
   .page__hero--video {
     min-height: clamp(16rem, 58vw, 22rem);
+    width: 100%;
   }
 
   .page__hero--overlay .wrapper {
     position: absolute;
-    left: 0;
-    right: 0;
-    bottom: 0.65rem;
+    inset: 0;
     margin: 0;
     padding: 0 0.6rem;
     z-index: 3;
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
     text-align: center;
   }
 
   .page__hero--overlay .page__title,
-  .page__hero--overlay .page__lead,
   .page__hero--overlay .page__meta {
     display: none;
   }
 
+  .page__hero--overlay .page__lead {
+    display: block;
+    margin: 0.6rem 0 0;
+    padding: 0.45rem 0.6rem;
+    max-width: min(96vw, 42rem);
+    border-radius: 10px;
+    font-size: 0.8rem;
+    line-height: 1.35;
+    color: #ffffff;
+    background: rgba(0, 0, 0, 0.5);
+    text-shadow: none;
+  }
+
   .page__hero--overlay .wrapper p {
-    margin: 0;
+    margin: 0 0 0.5rem;
     display: flex;
     justify-content: center;
     gap: 0.45rem;
